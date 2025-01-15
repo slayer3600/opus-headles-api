@@ -401,6 +401,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
 export interface ApiMenuItemMenuItem extends Struct.CollectionTypeSchema {
   collectionName: 'menu_items';
   info: {
+    description: '';
     displayName: 'MenuItem';
     pluralName: 'menu-items';
     singularName: 'menu-item';
@@ -412,6 +413,15 @@ export interface ApiMenuItemMenuItem extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    DisplayOrder: Schema.Attribute.Integer &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      >;
     link: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'/'>;

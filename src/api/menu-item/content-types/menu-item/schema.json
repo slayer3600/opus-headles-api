@@ -4,7 +4,8 @@
   "info": {
     "singularName": "menu-item",
     "pluralName": "menu-items",
-    "displayName": "MenuItem"
+    "displayName": "MenuItem",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,6 +25,12 @@
       "required": true,
       "unique": false,
       "default": "/"
+    },
+    "DisplayOrder": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 0
     }
   }
 }
