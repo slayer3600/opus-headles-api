@@ -7,8 +7,7 @@
     "build": "strapi build",
     "deploy": "strapi deploy",
     "develop": "strapi develop",
-    "start-old": "strapi start",
-    "start": "node node_modules/@strapi/strapi/bin/strapi.js start",
+    "start": "strapi start",
     "strapi": "strapi"
   },
   "dependencies": {
