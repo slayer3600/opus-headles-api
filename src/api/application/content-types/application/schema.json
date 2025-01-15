@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "applications",
+  "info": {
+    "singularName": "application",
+    "pluralName": "applications",
+    "displayName": "Application",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ApplicationTitle": {
+      "type": "string"
+    },
+    "ApplicationFooter": {
+      "type": "string"
+    },
+    "ApplicationVersion": {
+      "type": "string"
+    }
+  }
+}

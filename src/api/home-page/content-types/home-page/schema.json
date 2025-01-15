@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home-page",
     "pluralName": "home-pages",
-    "displayName": "Home Page"
+    "displayName": "Home Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +21,22 @@
       "type": "string",
       "required": true,
       "unique": false
+    },
+    "MainContentText": {
+      "type": "text",
+      "required": true
+    },
+    "FindTestCenterTitle": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "ReminderTitle": {
+      "type": "string",
+      "required": true
+    },
+    "ReminderButton": {
+      "type": "string"
     }
   }
 }
